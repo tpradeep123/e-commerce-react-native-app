@@ -10,9 +10,6 @@ export default function AddressModal(props){
     const handleClose=()=>{
         props.setVisible(false)
     }
-    // useEffect(function(){
-    //     setShow(props.visible)
-    //    },[props])
     return(
         <View style={{flex:1}}>
         <Modal visible={props.visible} animationType='slide' transparent>

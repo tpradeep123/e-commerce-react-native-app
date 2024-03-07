@@ -53,8 +53,7 @@ const ShowProducts=({item})=>{
     //numColumns={2}
     data={props.data}
     renderItem={({item})=><ShowProducts item={item}/>}
-    key={'#'}
-    keyExtractor={item => '#' + item.id}
+    keyExtractor={(item, index) => (item && item.id ? item.id.toString() : index.toString())}
 
     />
   </ScrollView>

@@ -11,16 +11,10 @@ export default function PhoneNumberModel(props){
    const [show,setShow]=useState(false)
    const [mobileno,setMobileno]=useState('')
    const handelOtp=async()=>{
-    // setVisible(true)
-    // setShow(false)
     props.setVisible(false)
     setShow(true)
    }
 
-   
-//    useEffect(function(){
-//     setShow(props.visible)
-//    },[props])
     return(
         <View style={{flex:1}} >
         <Modal visible={props.visible} transparent>
